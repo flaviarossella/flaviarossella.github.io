@@ -1,0 +1,256 @@
+:root {
+            /* Medieval Color Palette */
+            --medieval-gold: #D4AF37;
+            --medieval-burgundy: #5C1F1F;
+            --medieval-crimson: #8B1538;
+            --medieval-forest: #2D5016;
+            --medieval-cream: #F5E6D3;
+            --medieval-parchment: #E8DCC8;
+            --medieval-charcoal: #1A1A1A;
+            --medieval-bronze: #8B5A3C;
+            --medieval-stone: #8B8B83;
+        }
+        
+        @font-face {
+            font-family: 'Medieval Sharp';
+            src: url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+        }
+        
+        .reveal {
+            font-family: 'Crimson Text', Georgia, serif;
+            font-size: 32px;
+            color: var(--medieval-charcoal);
+            background-image: url('../imgs/heroherohero.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+            font-family: 'Uncial Antiqua', serif;
+            color: var(--medieval-burgundy);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .reveal h1 {
+            font-size: 2.8em;
+            color: var(--medieval-gold);
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+        }
+        
+        .reveal h2 {
+            font-size: 2.2em;
+            border-bottom: 3px solid var(--medieval-gold);
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .reveal h3 {
+            font-size: 1.6em;
+            color: var(--medieval-crimson);
+        }
+        
+        .reveal section {
+            text-align: left;
+            background: linear-gradient(135deg, var(--medieval-parchment) 0%, var(--medieval-cream) 100%);
+            border: 2px solid var(--medieval-bronze);
+        }
+        
+        .reveal .title-slide {
+            text-align: center;
+            background: linear-gradient(135deg, var(--medieval-burgundy) 0%, var(--medieval-crimson) 100%);
+            color: var(--medieval-cream);
+        }
+        
+        .reveal .title-slide h1 {
+            color: var(--medieval-gold);
+            font-size: 3.2em;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+        }
+        
+        .reveal .subtitle {
+            color: var(--medieval-cream);
+            font-size: 0.9em;
+            font-style: italic;
+            margin-top: 20px;
+            letter-spacing: 1px;
+        }
+        
+        .reveal ul, .reveal ol {
+            margin-left: 40px;
+        }
+        
+        .reveal li {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        
+        .reveal .highlight {
+            color: var(--medieval-crimson);
+            font-weight: bold;
+            font-family: 'Cinzel', serif;
+            letter-spacing: 1px;
+        }
+        
+        .reveal .box {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(45, 80, 22, 0.1) 100%);
+            border: 2px solid var(--medieval-gold);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .reveal .warning-box {
+            background: linear-gradient(135deg, rgba(139, 21, 56, 0.08) 0%, rgba(92, 31, 31, 0.08) 100%);
+            border: 2px solid var(--medieval-crimson);
+            border-left: 4px solid var(--medieval-gold);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.02);
+        }
+        
+        .reveal .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+        
+        .reveal .three-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+            align-items: start;
+        }
+        
+        .reveal .four-column {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            align-items: start;
+        }
+        
+        .reveal .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        
+        .reveal .comparison-item {
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .reveal .before {
+            background: linear-gradient(135deg, rgba(139, 21, 56, 0.15) 0%, rgba(92, 31, 31, 0.15) 100%);
+            border: 2px solid var(--medieval-crimson);
+        }
+        
+        .reveal .after {
+            background: linear-gradient(135deg, rgba(45, 80, 22, 0.15) 0%, rgba(92, 175, 55, 0.15) 100%);
+            border: 2px solid var(--medieval-forest);
+        }
+        
+        .reveal .tech-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--medieval-burgundy), var(--medieval-crimson));
+            color: var(--medieval-gold);
+            padding: 8px 16px;
+            border-radius: 4px;
+            margin: 5px;
+            font-size: 0.75em;
+            font-family: 'Cinzel', serif;
+            border: 1px solid var(--medieval-gold);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+        
+        .reveal .emoji {
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+        
+        .reveal .feature-card {
+            background: linear-gradient(135deg, var(--medieval-cream) 0%, var(--medieval-parchment) 100%);
+            padding: 15px;
+            border-radius: 6px;
+            border: 2px solid var(--medieval-bronze);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+        }
+        
+        .reveal .feature-card h3 {
+            border-bottom: 2px solid var(--medieval-gold);
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+        }
+        
+        .reveal .small-text {
+            font-size: 0.85em;
+            line-height: 1.5;
+        }
+        
+        .reveal .theme-card {
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border: 3px solid var(--medieval-gold);
+            background: var(--medieval-parchment);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        
+        .reveal .theme-card p {
+            margin: 5px 0;
+            font-family: 'Cinzel', serif;
+        }
+        
+        .reveal a {
+            color: var(--medieval-crimson);
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        
+        .reveal a:hover {
+            color: var(--medieval-gold);
+        }
+        
+        .reveal img {
+            border: 3px solid var(--medieval-bronze);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+        }
+        
+        /* Ornamental dividers */
+        .reveal .divider {
+            text-align: center;
+            font-size: 1.5em;
+            color: var(--medieval-gold);
+            margin: 20px 0;
+            letter-spacing: 8px;
+        }
+        
+        /* Medieval scroll effect */
+        .reveal .scroll-ornament {
+            font-family: Georgia, serif;
+            font-size: 2.5em;
+            color: var(--medieval-gold);
+            opacity: 0.3;
+            text-align: center;
+        }
+
+        .img-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .img-center img {
+            max-width: 80%;
+            max-height: 40vh;
+        }
+
+

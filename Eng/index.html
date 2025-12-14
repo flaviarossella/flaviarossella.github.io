@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grazzano Visconti</title>
+  <meta name="description" content="Grazzano Visconti Website">
+  <link rel="icon" href="../imgs/banner1.jpg">
+  <link rel="stylesheet" href="../styles/mystyles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+<section class="hero" id="hero">
+  <div class="overlay"></div>
+    <div class="lang-switch">
+    <button class="lang-btn" id="langItDesktop" onclick="switchToItalian()">IT</button>
+    <span class="lang-sep">|</span>
+    <button class="lang-btn active" id="langEnDesktop" onclick="switchToEnglish()">ENG</button>
+  </div>
+  <div class="hero-content">
+    <h1>Grazzano Visconti</h1>
+    <nav class="hero-menu">
+      <a href="index.html" class="hero-link">Homepage</a>
+      <a href="castello.html" class="hero-link">The Castle</a>
+      <a href="borgo.html" class="hero-link">The Village</a>
+      <a href="https://grazzanovisconti.com/wp-content/uploads/2018/10/GRAZ_mappa_ingresso_a4.pdf" class="hero-link" target="_blank">Map</a>
+    </nav>
+  </div>
+</section>
+
+<div class="page-wrapper">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-8 mb-4 mb-lg-0">
+        <div id="carouselCastelli" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../imgs/parco1.jpg" class="d-block carousel-fixed-img" alt="Park 1">
+            </div>
+            <div class="carousel-item">
+              <img src="../imgs/negozio1.jpg" class="d-block carousel-fixed-img" alt="Shop">
+            </div>
+            <div class="carousel-item">
+              <img src="../imgs/parco2.jpg" class="d-block carousel-fixed-img" alt="Park 2">
+            </div>
+            <div class="carousel-item">
+              <img src="../imgs/parco3.jpg" class="d-block carousel-fixed-img" alt="Park 3">
+            </div>
+            <div class="carousel-item">
+              <img src="../imgs/parco4.jpg" class="d-block carousel-fixed-img" alt="Park 4">
+            </div>
+            <div class="carousel-item">
+              <img src="../imgs/parco5.jpg" class="d-block carousel-fixed-img" alt="Park 5">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselCastelli" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselCastelli" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="col-lg-4 d-flex align-items-start">
+        <div class="castello-story">
+          <div class="story-inline">
+            <img src="../imgs/vminiata.jpg" alt="Decorated initial" class="miniata-img">
+            <p class="castello-text">
+              isiting the village of Grazzano Visconti still means walking through the streets of an ideal town, an utopia born from the dream of one man,
+              Duke Giuseppe Visconti di Modrone (1879-1941). He conceived Grazzano Visconti as an ideal place that could combine modern comforts with the social and creative harmony of medieval villages, creating it around the ancient family castle in a neo‑medieval style that today characterizes the whole borgo.
+              Inspired by the Arts and Crafts movement, which valued craftsmanship over industrial mass production, he designed a village where artisan work, study, and community life could flourish together.
+              In the village he had useful and innovative facilities built: homes, a nursery school, a vocational craft school, a theatre, and the Giuseppe Visconti Institution, where free lessons on hygiene and agricultural techniques were offered, along with charitable initiatives such as campaigns against malaria.
+              Local craftsmanship, especially woodwork and wrought iron, became highly appreciated and recognizable as the “Grazzano style”, while the Duke also understood the tourist potential of the village, adding hotels, restaurants, and traditional costumes to create a timeless atmosphere for visitors.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<section class="two-columns">
+  <a href="visite.html">
+    <div class="column">
+      <h2 class="pippo">Opening Hours</h2>
+      <p>
+        <img src="../imgs/wizard.png" alt="wizard" class="miniata-img">
+        Discover the opening times of the park, the castle, and the village
+      </p>
+    </div>
+  </a>
+  <a href="contatti.html">
+    <div class="column2">
+      <h2>Info and Contacts</h2>
+      <p>
+        <img src="../imgs/writing.png" alt="writing" class="miniata-img">
+        Find out more about the village and how to reach us
+      </p>
+    </div>
+  </a>
+</section>
+
+<div class="container mt-5 mb-5">
+  <h2>Discover our events</h2>
+  <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="d-flex justify-content-center">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Christmas</h5>
+              <img src="../imgs/natalecarosello.jpg" class="card-event-img" alt="Christmas in Grazzano Visconti">
+              <a href="natale.html" class="btn btn-success" target="_blank" rel="noopener noreferrer" target="_blank" >Go</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Halloween</h5>
+              <img src="../imgs/halloweencarosello.jpg" class="card-event-img" alt="Halloween in Grazzano Visconti">
+              <a href="halloween.html" class="btn btn-success" target="_blank" rel="noopener noreferrer" target="_blank">Go</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Grazzano Wine</h5>
+              <img src="../imgs/winecarosello.jpg" class="card-event-img" alt="Grazzano Wine event">
+              <a href="wine.html" class="btn btn-success" target="_blank" rel="noopener noreferrer" target="_blank">Go</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Vampiria</h5>
+              <img src="../imgs/vampiriacarosello.jpg" class="card-event-img" alt="Vampiria event">
+              <a href="vampiria.html" class="btn btn-success" target="_blank" rel="noopener noreferrer" target="_blank">Go</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Visit the Park</h5>
+              <img src="../imgs/parcocarosello.jpg" class="card-event-img" alt="Park visit">
+              <a href="visite.html" class="btn btn-success">Go</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Visit the Castle</h5>
+              <img src="../imgs/castellocarosello.jpg" class="card-event-img" alt="Castle visit">
+              <a href="visite.html" class="btn btn-success">Go</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<div class="footer-section">
+  <img src="../imgs/banner1.jpg" alt="Logo">
+  <p class="footertext">
+    Grazzano Visconti (Piacenza)<br>
+    Strada del Cantone - Grazzano Visconti - Vigolzone (PC)<br>
+    Info line +39.351.2778162<br>
+    <a class="linkcolor" href="https://www.facebook.com/GrazzanoViscontiOfficial/">Facebook</a> -
+    <a class="linkcolor" href="https://www.instagram.com/grazzanoviscontiofficial/">Instagram</a>
+  </p>
+</div>
+
+<div id="selettoreTema" class="tema-selector">
+  <button class="tema-btn active" id="temaLight" onclick="applyDisplayTheme('light')">☀️</button>
+  <button class="tema-btn" id="temaDark" onclick="applyDisplayTheme('dark')">🌙</button>
+  <button class="tema-btn" id="temaSepia" onclick="applyDisplayTheme('sepia')">📜</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="../scripts/myjs.js"></script>
+
+<button class="hamburger" id="hamburger" onclick="toggleMobileMenu()">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-header">
+    <h3>Menu</h3>
+    <button class="close-menu" id="closeMenu" onclick="closeMobileMenu()">&times;</button>
+  </div>
+  <ul class="mobile-menu-links">
+    <li><a href="index.html">Homepage</a></li>
+    <li><a href="castello.html">The Castle</a></li>
+    <li><a href="borgo.html">The Village</a></li>
+    <li><a href="visite.html">Visits</a></li>
+    <li><a href="contatti.html">Contacts</a></li>
+    <li><a href="https://grazzanovisconti.com/wp-content/uploads/2018/10/GRAZ_mappa_ingresso_a4.pdf">Map</a></li>
+  </ul>
+  <div class="mobile-lang-switch">
+    <p>Lingua / Language</p>
+    <div class="mobile-lang-buttons">
+  <button class="mobile-lang-btn" id="langItMobile"  onclick="switchToItalian()">IT</button>
+  <button class="mobile-lang-btn active" id="langEnMobile"  onclick="switchToEnglish()">ENG</button>
+</div>
+  </div>
+  <div class="mobile-theme-switch">
+    <p>Tema / Theme</p>
+    <div class="mobile-theme-buttons">
+      <button class="mobile-theme-btn active" id="themeLight" onclick="applyDisplayTheme('light')">☀️</button>
+      <button class="mobile-theme-btn" id="themeDark" onclick="applyDisplayTheme('dark')">🌙</button>
+      <button class="mobile-theme-btn" id="themeSepia" onclick="applyDisplayTheme('sepia')">📜</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

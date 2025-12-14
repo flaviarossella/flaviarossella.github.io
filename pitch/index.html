@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Grazzano Visconti Website - Refactoring Project</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
+    <link rel="stylesheet" href="styles/mystyles.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');  
+    </style>
+</head>
+<body>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            
+            <section class="title-slide">
+                <h1>🏰 Grazzano Visconti Website<br>Refactoring Project</h1>
+                <p class="subtitle">Web Communication Project</p>
+                <p class="subtitle">Flavia Rossella • Academic Year 2025/2026</p>
+            </section>
+
+           <section>
+                <h2> Agenda</h2>
+                <ol>
+                    <li>Problem Analysis & Context</li>
+                    <li>Refactoring objectives</li>
+                    <li>Before & After Comparison</li>
+                    <li>Design & Concepts</li>
+                    <li>Site Structure & Tools</li>
+                    <li>Development Process</li>
+                    <li>Challenges & Solutions</li>
+                    <li>Results & Future Developments</li>
+                </ol>
+            </section>
+
+            
+            <section>
+                <h2> The Problem</h2>
+                <p>The official Grazzano Visconti website presents several critical issues affecting user experience:</p>
+                <div class="warning-box">
+                    <p><strong>Main Issue:</strong> The site has valuable content about history, atmosphere, services, and events, but fails to communicate effectively with potential tourists.</p>
+                </div>
+            </section>
+
+            
+            <section>
+                <h2> Critical Issues Identified</h2>
+                <ul>
+                    <li><span class="highlight">Performance:</span> Large unoptimized images, heavy scripts, slow loading times</li>
+                    <li><span class="highlight">Usability:</span> Unclear navigation, confusing button placement</li>
+                    <li><span class="highlight">Design:</span> Static layout without clear visual hierarchy, poor use of white space</li>
+                    <li><span class="highlight">Content:</span> Disorganized sections (especially Info & Contacts), lack of visual appeal</li>
+                    <li><span class="highlight">CTAs:</span> Weak call-to-action buttons that fail to guide users</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2> Critical Issues Identified</h2>
+                <ul>
+                    <li><span class="highlight">Performance:</span> Large unoptimized images, heavy scripts, slow loading times</li>
+                    </ul>
+                    <div class="img-center">
+                    <img src="./imgs/homepage.jpg">
+                    </div>
+                    
+            </section>
+
+            <section>
+                <h2> Critical Issues Identified</h2>
+                <ul>
+                    
+                    <li><span class="highlight">Usability:</span> Unclear navigation, confusing button placement</li>
+                    <div class="img-center">
+                     <img src="./imgs/navigation.jpg">
+                     </div>
+                   
+                </ul>
+            </section>
+
+            <section>
+                <h2> Critical Issues Identified</h2>
+                <ul>
+                    
+                    <li><span class="highlight">Design:</span> Static layout without clear visual hierarchy, poor use of white space</li>
+                    <div class="img-center">
+                     <img src="./imgs/whitespaces.jpg">
+                     </div>
+                   
+                </ul>
+            </section>
+
+            <section>
+                <h2> Critical Issues Identified</h2>
+                <ul>
+                   <li><span class="highlight">Content:</span> Disorganized sections (especially Info & Contacts), lack of visual appeal</li>
+                    <img src="./imgs/infoecontatti.jpg">
+                    
+            </section>
+
+            <section>
+                <h2> Critical Issues Identified</h2>
+                <ul>
+                    <li><span class="highlight">CTAs:</span> Weak call-to-action buttons that fail to guide users</li>
+                     <div class="img-center">
+                    <img src="./imgs/ctabutton.jpg">
+                    </div>
+                    
+            </section>
+
+            
+            <section>
+                <h2> User Impact Analysis</h2>
+                <div class="box">
+                    <p><strong>Navigation Issues:</strong> Users get lost, can't find information quickly</p>
+                    <p><strong>Visual Appeal:</strong> Low-quality images fail to convince visitors</p>
+                    <p><strong>Conversion:</strong> Weak CTAs result in low booking/inquiry rates</p>
+                    <p><strong>International Reach:</strong> Poor multilingual support limits audience</p>
+                </div>
+            </section>
+
+            <section>
+                <h2> Example of poor multilingual support:</h2>
+                 <div class="img-center">
+            <img src="./imgs/eng.jpg">
+            </div>
+            </section>
+
+            
+            <section>
+                <h2> Why This Matters</h2>
+                <div class="two-column">
+                    <div>
+                        <h3>For Tourism</h3>
+                        <ul class="small-text">
+                            <li>First impression is crucial</li>
+                            <li>Users decide based on photos</li>
+                            <li>Mobile is the primary device</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>For the Village</h3>
+                        <ul class="small-text">
+                            <li>Lost visitor opportunities</li>
+                            <li>Reduced event participation</li>
+                            <li>Lower commercial activity</li>
+                            <li>Missed international tourism</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section>
+                <h2> Refactoring Objectives</h2>
+                <div class="two-column">
+                    <div>
+                        <h3>Primary Goals</h3>
+                        <ul>
+                            <li> <strong>Inform:</strong> Clearly present all information</li>
+                            <li> <strong>Engage:</strong> Create emotional connection</li>
+                            <li> <strong>Convert:</strong> Guide users to action</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Secondary Goals</h3>
+                        <ul>
+                            <li> Modern, intuitive design</li>
+                            <li> Professional photography</li>
+                            <li> Updated, well-structured content</li>
+                            <li> Event visibility (past & future)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section>
+                <h2>Transformation Overview</h2>
+                <div class="comparison">
+                    <div class="comparison-item before">
+                        <h3>Before</h3>
+                        <ul style="text-align: left; font-size: 0.8em;">
+                            <li>Confusing navigation</li>
+                            <li>Scattered information</li>
+                             <li>Disappearing buttons</li>
+                            <li>Unoptimized images</li>
+                            <li>Poor mobile experience</li>
+                            <li>Generic appearance</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-item after">
+                        <h3>After</h3>
+                        <ul style="text-align: left; font-size: 0.8em;">
+                            <li>Clear, intuitive menu</li>
+                            <li>Well-organized information</li>
+                            <li>Modern, responsive design</li>
+                            <li>Curated photo galleries</li>
+                            <li>Mobile-first approach</li>
+                            <li>Unique medieval identity</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section>
+                <h2> Page-by-Page Improvements</h2>
+                <div class="feature-card">
+                    <strong>Homepage:</strong> From generic layout to engaging hero section with seasonal themes and event carousel
+                </div>
+                 <div class="img-center">
+                <img src="./imgs/homepageref.jpg">
+                </div>
+            </section>
+
+            <section>
+                <h2> Page-by-Page Improvements</h2>
+                <div class="feature-card">
+                    <strong>Visits Page:</strong> From scattered info to organized sections with clear pricing, schedules, and booking CTAs
+                </div>
+                <div class="img-center">
+                <img src="./imgs/eventibeforeafter.jpg">
+                </div>
+            </section>
+
+            <section>
+                <h2> Page-by-Page Improvements</h2>
+                <div class="feature-card">
+                    <strong>Event Pages:</strong> From static announcements to immersive presentations with carousels and thematic styling
+                </div>
+                <div class="img-center">
+                <img src="./imgs/natalebeforeafter.jpg">
+                </div>
+            </section>
+
+            </section>
+
+
+            
+            <section>
+                <h2>Design Concept</h2>
+                <div class="two-column">
+                    <div>
+                        <h3>Main Theme</h3>
+                        <ul>
+                            <li><strong>Style:</strong> Medieval-inspired</li>
+                            <li><strong>Approach:</strong> Minimalist</li>
+                            <li><strong>Character:</strong> Seasonal accents</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Distinctive Elements</h3>
+                        <ul>
+                            <li><strong>Colors:</strong> 4 seasonal palettes</li>
+                            <li><strong>Typography:</strong> Helvetica + Georgia</li>
+                            <li><strong>Graphics:</strong> Medieval letters and images</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section>
+                <h2>Four Seasonal Themes</h2>
+                <div class="four-column">
+                    <div class="theme-card" style="background: #f5fdf7; border-color: #5c6b2a;">
+                        <p><strong>🌿 Normal (Summer)</strong></p>
+                        <p class="small-text" style="color: #5c6b2a;">Olive Green</p>
+                        <p class="small-text">Year-round default</p>
+                    </div>
+                    <div class="theme-card" style="background: #fff0f0; border-color: #8b0000;">
+                        <p><strong>🎄 Christmas (Winter)</strong></p>
+                        <p class="small-text" style="color: #8b0000;">Dark Red</p>
+                        <p class="small-text">Dec 8 - Jan 6</p>
+                    </div>
+                    <div class="theme-card" style="background: #fff5e6; border-color: #8b4513;">
+                        <p><strong>🎃 Halloween (Fall)</strong></p>
+                        <p class="small-text" style="color: #8b4513;">Saddle Brown</p>
+                        <p class="small-text">Oct 25+</p>
+                    </div>
+                    <div class="theme-card" style="background: #f0fff0; border-color: #008000;">
+                        <p><strong>☘️ St. Patrick's (Springtime)</strong></p>
+                        <p class="small-text" style="color: #008000;">Bright Green</p>
+                        <p class="small-text">March 17</p>
+                    </div>
+                </div>
+                <div class="box" style="margin-top: 20px;">
+                    <p><strong>Automatic Selection:</strong> JavaScript checks the current date and applies the appropriate theme automatically.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Dynamic Theme System - custom </h2>
+                <div class="theme-card" style="background: #fff0f0; border-color: #1f1f1f;">
+                        <p><strong>Dark Theme</strong></p>
+                        <p class="small-text" style="color: #1f1f1f;">Black</p>
+                    </div>
+                    <div class="theme-card" style="background: #fff5e6; border-color: #b8a99f;">
+                        <p><strong>Parchment</strong></p>
+                        <p class="small-text" style="color: #b8a99f;">Parchment Paper</p>
+                    </div>
+                <div class="box" style="margin-top: 20px;">
+                    <p><strong>Implementation:</strong> CSS custom properties updated via JavaScript, changes applied instantly without page reload</p>
+                </div>
+            </section>
+
+            
+            <section>
+                <h2>Site Structure</h2>
+                <div class="two-column">
+                    <div>
+                        <h3>Main Pages</h3>
+                        <ul class="small-text">
+                            <li><strong>index.html:</strong> Homepage with village introduction</li>
+                            <li><strong>castello.html:</strong> Castle history & tours</li>
+                            <li><strong>borgo.html:</strong> Village atmosphere & features</li>
+                            <li><strong>visite.html:</strong> Visit schedules & tickets</li>
+                            <li><strong>contatti.html:</strong> Contact info & directions</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Event Pages</h3>
+                        <ul class="small-text">
+                            <li><strong>natale.html:</strong> Christmas (Dec 8 - Jan 6)</li>
+                            <li><strong>halloween.html:</strong> Halloween (Oct 31)</li>
+                            <li><strong>wine.html:</strong> Wine Festival (Oct 11-12)</li>
+                            <li><strong>vampiria.html:</strong> Vampiria (Oct 4-5)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box" style="margin-top: 20px;">
+                    <p><strong>Multilingual Structure:</strong> Complete mirror in Italian and English folders</p>
+                </div>
+            </section>
+
+
+            
+            <section>
+                <h2>Technologies & Tools</h2>
+                <div style="text-align: center; margin: 40px 0;">
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">CSS3</span>
+                    <span class="tech-badge">JavaScript ES6</span>
+                    <span class="tech-badge">Bootstrap 5</span>
+                    <span class="tech-badge">GitHub Pages</span>
+                    <span class="tech-badge">Git Version Control</span>
+                </div>
+                <div class="two-column">
+                    <div class="box">
+                        <p><strong>Frontend:</strong></p>
+                        <ul class="small-text">
+                            <li>Semantic HTML5</li>
+                            <li>CSS Grid & Flexbox</li>
+                            <li>CSS Custom Properties</li>
+                            <li>Vanilla JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <p><strong>Features:</strong></p>
+                        <ul class="small-text">
+                            <li>Mobile-responsive</li>
+                            <li>Optimized performance</li>
+                            <li>Cross-browser compatible</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+            
+            <section>
+                <h2>Development Process</h2>
+                <ol>
+                    <li><strong>Research & Analysis:</strong> Studied existing site and social media</li>
+                    <li><strong>Field Research:</strong> Attended events (Halloween, Christmas), photographed locations</li>
+                    <li><strong>Planning:</strong> Wireframes, information architecture</li>
+                    <li><strong>Design:</strong> 4 seasonal mockups, 3 time scheduled palettes</li>
+                    <li><strong>Development:</strong> HTML structure → CSS styling → JavaScript functionality</li>
+                    <li><strong>Testing:</strong> Cross-browser, multi-device, performance optimization</li>
+                </ol>
+            </section>
+
+        
+           
+            <section>
+                <h2>Bootstrap 5 Integration</h2>
+                <div class="box">
+                    <p><strong>Strategic Usage:</strong></p>
+                    <ul class="small-text">
+                        <li><strong>Grid System:</strong> Responsive 12-column layout foundation</li>
+                        <li><strong>Components:</strong> Carousel (events & images), Cards (info boxes), Buttons (CTAs)</li>
+                        <li><strong>Utilities:</strong> Spacing (mt-, mb-, p-), Display (d-flex), Alignment classes</li>
+                        <li><strong>Customization:</strong> Body-level CSS selectors for increased specificity to override Bootstrap defaults</li>
+                    </ul>
+                </div>
+            </section>
+
+            
+            <section>
+                <h2>Key Challenges</h2>
+                <div class="feature-card">
+                    <p><strong>Challenge 1: High-Quality Image Sourcing</strong><br>
+                    <span style="color: var(--primary-green);" class="small-text">→ Solution: Multiple field visits during events, collaborated with official social media accounts for additional content</span></p>
+                </div>
+                <div class="feature-card">
+                    <p><strong>Challenge 2: Effective Multilingual Support</strong><br>
+                    <span style="color: var(--primary-green);" class="small-text">→ Solution: Mirror folder structure (/Ita/ & /Eng/) with JavaScript-based switching and localStorage for preference persistence</span></p>
+                </div>
+                <div class="feature-card">
+                    <p><strong>Challenge 3: Bootstrap + Custom CSS Conflicts</strong><br>
+                    <span style="color: var(--primary-green);" class="small-text">→ Solution: Increased CSS specificity using body-level selectors to override Bootstrap while maintaining framework benefits</span></p>
+                </div>
+            </section>
+
+            
+            <section>
+                <h2>Short-term Improvements</h2>
+                <div class="two-column">
+                    <div>
+                        <h3>Technical Enhancements</h3>
+                        <ul class="small-text">
+                            <li>Integrated booking system</li>
+                            <li>Backend for contact forms</li>
+                            <li>Newsletter subscription</li>
+                            <li>Performance monitoring</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Content Additions</h3>
+                        <ul class="small-text">
+                            <li>Video galleries</li>
+                            <li>Detailed shop directory</li>
+                            <li>Restaurant menus & hours</li>
+                            <li>Event photo archives</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+           
+            <section class="title-slide">
+                <h1>🏰 Thank You!</h1>
+                <p class="subtitle">Flavia Rossella</p>
+                <p class="subtitle">Web Communication • Academic Year 2025/2026</p>
+                <p style="margin-top: 40px; font-size: 0.8em; color: #666;">
+                    Special thanks to Grazzano Visconti for inspiration<br>
+                </p>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            slideNumber: 'c/t',
+            transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'fade',
+            center: false,
+            width: 1280,
+            height: 720,
+            margin: 0.1,
+            minScale: 0.2,
+            maxScale: 2.0,
+            controlsTutorial: true,
+            progress: true,
+            keyboard: true,
+            overview: true,
+            touch: true
+        });
+    </script>
+</body>
+</html>
